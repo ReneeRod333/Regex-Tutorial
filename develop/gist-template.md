@@ -20,14 +20,13 @@ We'll explain each part of this regex, showing how it validates the structure of
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Boundaries](#boundaries)
-- [Back-references](#back-references)
 
 ## Regex Components
 
 ### Anchors
 Anchors: `^` and `$`
-Pattern:
 
+Pattern:
 `^...$`
 
 `^` asserts the position at the start of the string.
@@ -40,8 +39,8 @@ Code Snippet:
 
 ### Quantifiers
 Quantifiers: `+`
-Pattern:
 
+Pattern:
 `[a-z0-9_\.-]+`
 
 `+` is a greedy quantifier that matches one or more of the preceding element.
@@ -53,8 +52,8 @@ Code Snippet:
 
 ### Character Classes
 Character Classes: `[a-z0-9_\.-]` and `[\da-z\.-]`
-Pattern:
 
+Pattern:
 `[a-z0-9_\.-]`
 
 `[a-z0-9_\.-]` defines a set of acceptable characters, including lowercase letters, digits, underscores, dots, and hyphens.
@@ -69,8 +68,8 @@ Code Snippet:
 
 ### Grouping and Capturing
 Grouping and Capturing: `(...)`
-Pattern:
 
+Pattern:
 `([a-z0-9_\.-]+)`
 
 `(...)` captures a group of characters. The content matched by this group can be referenced or extracted.
@@ -84,8 +83,8 @@ Code Snippet:
 
 ### Bracket Expressions
 Bracket Expressions: `[a-z0-9_\.-]`, `[\da-z\.-]`, `[a-z\.]{2,6}`
-Pattern:
 
+Pattern:
 `[a-z0-9_\.-]`
 
 `[a-z0-9_\.-]` specifies a set of acceptable characters for the username.
@@ -101,8 +100,8 @@ Code Snippet:
 
 ### Boundaries
 Boundaries: Start and End
-Pattern:
 
+Pattern:
 `^...$`
 
 Start `(^)` ensures matching from the beginning of the string.
